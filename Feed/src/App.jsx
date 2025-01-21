@@ -1,11 +1,13 @@
-import { useState } from 'react'
+import { Post } from "./Post"
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export function App() {
   return (
-    <h1>Hello World</h1>
+    <div>
+      <Post 
+        author= "Diego"
+        content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium error blanditiis cum itaque quasi temporibus dolorem, illum quo! Est corrupti et commodi fuga libero, molestias fugiat temporibus. Labore, quasi doloribus!"
+      />
+      
+    </div>
   )
 }
-
-export default App
