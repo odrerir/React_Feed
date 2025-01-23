@@ -4,6 +4,7 @@
     padding: 2.5rem;
 }
 
+/* Estiliza um espaco em cima de um post, caso exista um post acima */
 .post + .post{
     margin-top: 2rem;
 }
@@ -23,6 +24,55 @@
 /* Links do conteudo */
 .content a {
     font-weight: bold;
-    color: var(--gray-500);
+    color: var(--green-500);
     text-decoration: none;
+}
+
+/* Cor ao passar o mouse por cima do Link */
+.content a:hover {
+    color: var(--green-300);
+}
+
+/* Estiliza o Header que esta apenas na camada mais acima de Post, nao o que esta dentro de outras tags */
+.post > header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilo do tempo de publicacao */
+.post > header time {
+    font-size: 0.875rem;
+    color: var(--gray-400);
+}
+
+/* Dados do usuario */
+.author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Foto Perfil */
+.author img{
+    width: calc(3rem + 12px);
+    height: calc(3rem + 12px);
+    border-radius: 8px;
+    border: 4px solid var(--gray-800);
+    outline: 2px solid var(--green-500);
+}
+
+/* Nome */
+.authorInfo strong{
+    display: block;
+    color: var(--gray-100);
+    line-height: 1.6;
+}
+
+/* Cargo */
+.authorInfo span{
+    display: block;
+    font-size: 0.875rem;
+    color: var(--gray-400);
+    line-height: 1.6;
 }
