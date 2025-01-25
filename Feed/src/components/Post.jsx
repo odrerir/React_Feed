@@ -1,18 +1,21 @@
 import styles from './Post.module.css';
 
+import { Comment } from "./Comment";
+import { Avatar } from './Avatar';
+
 export function Post(){
     return (
         <article className={styles.post}>
             <header>
                 <div className={styles.author}>
-                    <img src="https:github.com/odrerir.png" />
+                    <Avatar src="https:github.com/maykbrito.png" />
                     <div className={styles.authorInfo}>
-                        <strong>Diego Fernandes</strong>
-                        <span>Web Deeloper</span>
+                        <strong>Devon Fernandes</strong>
+                        <span>Web Developer</span>
                     </div>
                 </div>
 
-                <time datetime="2022-05-11  00:15:30"> Publicado a 1H</time>
+                <time datetime="2022-05-11  00:15:30"> Publicado a 1h</time>
             </header>
 
             <div className={styles.content}>
@@ -32,14 +35,20 @@ export function Post(){
             <form className={styles.commentForm}>
                 <strong>Deixe seu FeedBack</strong>
 
-                <textarea 
+                <textarea
                     placeholder='Deixe seu Comentario'>
                 </textarea>
-                
+
                 <footer>
                     <button type='submit'>Publicar</button>
                 </footer>
             </form>
+
+            <div className={styles.commentList}>
+                <Comment />
+                <Comment />
+                <Comment />
+            </div>
         </article>
     )
 }

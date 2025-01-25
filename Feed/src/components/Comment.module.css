@@ -1,0 +1,101 @@
+/* Toda a Area de comentarios */
+.comment{
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+/*  */
+.comment > img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 8px;
+}
+
+/* Bloco que engloba o comentario e o botao de curtida */
+.commentBox{
+    flex: 1;
+}
+
+/* Bloco que engloba o comentario */
+.commentContent{
+    background: var(--gray-700);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+/* Area do comentario */
+.commentContent header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* Nome do author do comentario */
+.authorAndTime strong{
+    display: block;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+/* Tempo do comentario */
+.authorAndTime time{
+    display: block;
+    font-size: 0.75rem;
+    line-height: 1.6;
+    color: var(--gray-400);
+}
+
+/* Botao de lixeira */
+.commentContent header button{
+    background: transparent;
+    border: 0;
+    color: var(--gray-400);
+    line-height: 0;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+/* Quando passa o mouse no botao de lixeira */
+.commentContent header button:hover{
+    color:var(--red-500);
+}
+
+/* Escrita do comentario */
+.commentContent p{
+    margin-top: 1rem;
+    color: var(--gray-300);
+}
+
+/* Bloco onde fica o botao de curtida */
+.commentBox footer{
+    margin-top: 1rem;
+}
+
+/* Botao de curtida */
+.commentBox footer button{
+    background: transparent;
+    border: 0;
+    color: var(--gray-400);
+    border-radius: 2px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+}
+
+/* Quando passa o mouse por cima */
+.commentBox footer button:hover{
+    color: var(--green-300);
+}
+
+/* Icone de curtida */
+.commentBox footer button svg{
+    margin-right: 0.5rem;
+}
+
+/* Bolinha antes do numero de curtidas */
+.commentBox footer button span::before{
+    content: "\2022";
+    padding: 0 0.25rem;
+}
