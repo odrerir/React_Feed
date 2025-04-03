@@ -15,6 +15,7 @@
     --red-500: #F75A68;
 }
 
+/* Tira a bordinha branca quando o input ta selecionado */
 :focus{
     outline: transparent;
     box-shadow: 0 0 0 2px var(--green-500);
